@@ -468,7 +468,7 @@ class Compilation:
         return {
             'file': relative,
             'arguments':
-                [compiler, self.phase] + self.flags + output + [relative],
+                [compiler, self.phase] + self.flags + output + [self.source],
             'directory': self.directory
         }
 
